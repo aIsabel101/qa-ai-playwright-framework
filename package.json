@@ -1,0 +1,41 @@
+{
+  "name": "qa-ai-playwright-framework",
+  "version": "1.0.0",
+  "description": "Readme.md",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari",
+    "CucumberRegression": "npx cucumber-js --tags \"@Regression\" --retry 1 --exit --format html:cucumber-report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aIsabel101/qa-ai-playwright-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aIsabel101/qa-ai-playwright-framework/issues"
+  },
+  "homepage": "https://github.com/aIsabel101/qa-ai-playwright-framework#readme",
+  "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.1.0",
+    "allure": "^3.19.0",
+    "allure-playwright": "^3.13.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "exceljs": "^3.4.0"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
