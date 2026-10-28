@@ -8,7 +8,10 @@
     "webTests": "npx playwright test --grep @Web",
     "APITests": "npx playwright test --grep @API",
     "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari",
-    "CucumberRegression": "npx cucumber-js --tags \"@Regression\" --retry 1 --exit --format html:cucumber-report.html"
+    "practice": "node --test practice/exercises.test.js",
+    "practice2": "node --test practice/exercises2.test.js",
+    "practice3": "node --test practice/exercises3.test.js",
+    "CucumberRegression":"npx cucumber-js --tags \"@Regression\" --retry 1 --exit --format html:cucumber-report.html"
   },
   "repository": {
     "type": "git",
